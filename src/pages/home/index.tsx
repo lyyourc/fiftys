@@ -1,7 +1,10 @@
 import React from 'react'
+import Letters from '@/components/letters'
 
 export default function HomePage() {
   return (
-    <div>home page</div>
+    <div>
+      <Letters />
+    </div>
   )
 }
