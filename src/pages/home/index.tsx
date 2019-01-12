@@ -1,37 +1,55 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { isEmpty } from 'lodash'
 import fuzzysort from 'fuzzysort'
 import { Flex, Box } from '@rebass/grid/emotion'
 import { css } from '@emotion/core'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { seions } from '@/services/data'
 import { Letter } from '@/services/letter'
 import Letters from '@/components/letters'
 import Search from '@/components/search'
 import Status from '@/components/status'
+import theme from '@/styled/theme'
 
 export default function HomePage() {
   const [search, setSearch] = useState('')
   const lettersFiltered = filterLetters(seions, search)
 
+  const scrollEl = useRef(null)
+  useEffect(() => {
+    handleBodyScroll(scrollEl.current)
+  }, [])
+
   return (
-    <Flex
-      flexDirection="column"
+    <div
       css={css`
-        min-height: 100vh;
+        height: 100vh;
       `}
     >
-      <Box m={2} mt={3}>
+      <Box px={2} pt={3}>
         <Search placeholder="あ；ア；a ；安" onChange={handleSearchChange} />
       </Box>
 
-      {!isEmpty(lettersFiltered) ? (
-        <Letters letters={lettersFiltered} />
-      ) : (
-        <Flex flex={1} alignItems="center" m={2}>
-          <Status status="empty" />
-        </Flex>
-      )}
-    </Flex>
+      <div
+        ref={scrollEl}
+        css={css`
+          height: calc(100% - ${theme.heights.search} - 16px);
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+          padding: 8px;
+          display: flex;
+          flex-direction: column;
+        `}
+      >
+        {!isEmpty(lettersFiltered) ? (
+          <Letters letters={lettersFiltered} />
+        ) : (
+          <Flex flex={1} alignItems="center">
+            <Status status="empty" />
+          </Flex>
+        )}
+      </div>
+    </div>
   )
 
   function handleSearchChange(input: string) {
@@ -50,5 +68,15 @@ export default function HomePage() {
       .map(result => result.obj)
 
     return results
+  }
+
+  function handleBodyScroll(scrollEl: HTMLElement | null) {
+    if (scrollEl) {
+      disableBodyScroll(scrollEl)
+    }
+
+    return () => {
+      enableBodyScroll(scrollEl)
+    }
   }
 }

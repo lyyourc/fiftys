@@ -13,11 +13,7 @@ export default function Letters(props: LettersProps) {
   const { letters } = props
 
   return (
-    <div
-      css={css`
-        padding: 4px;
-      `}
-    >
+    <div>
       {chunk(letters, 5).map((group, i) => (
         <Flex key={i} alignItems="stretch">
           {group.map((item, j) => (

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@emotion/styled'
+import styled from '@/styled'
 import { noop } from 'lodash'
 
 export interface ISearchProps {
@@ -19,7 +19,7 @@ export default function Search(props: ISearchProps) {
 
 const Input = styled('input')`
   width: 100%;
-  height: 42px;
+  height: ${props => props.theme.heights.search};
   background: 0 0;
   border: 2px solid #41403e;
   border-bottom-left-radius: 15px 255px;
@@ -31,4 +31,5 @@ const Input = styled('input')`
   font-size: 1rem;
   outline: 0;
   padding: 0.5rem;
+  box-shadow: 4px 10px 10px -8px rgba(0, 0, 0, 0.2);
 `

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Letter } from '@/services/letter'
 import { css } from '@emotion/core'
-import styled from '@emotion/styled'
+import styled from '@/styled'
 import { Flex } from '@rebass/grid/emotion'
 
 export default function LetterItem(props: Letter) {
