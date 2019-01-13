@@ -4,3 +4,12 @@ export interface Letter {
   roomaji: string
   chinese: string
 }
+
+export function createNoopLetter(): Letter {
+  return {
+    hiragana: '',
+    katakana: '',
+    roomaji: '',
+    chinese: '',
+  }
+}

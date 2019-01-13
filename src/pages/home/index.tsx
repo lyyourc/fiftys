@@ -5,15 +5,18 @@ import { Flex, Box } from '@rebass/grid/emotion'
 import { css } from '@emotion/core'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { seions } from '@/services/data'
-import { Letter } from '@/services/letter'
+import { Letter, createNoopLetter } from '@/services/letter'
 import Letters from '@/components/letters'
 import Search from '@/components/search'
 import Status from '@/components/status'
 import theme from '@/styled/theme'
+import LetterGalary from '@/components/letter-gallery'
 
 export default function HomePage() {
   const [search, setSearch] = useState('')
   const lettersFiltered = filterLetters(seions, search)
+
+  const [activeLetter, setActiveLetter] = useState(createNoopLetter())
 
   const scrollEl = useRef(null)
   useEffect(() => {
@@ -42,15 +45,43 @@ export default function HomePage() {
         `}
       >
         {!isEmpty(lettersFiltered) ? (
-          <Letters letters={lettersFiltered} />
+          <Letters
+            letters={lettersFiltered}
+            onLetterClick={handleLetterClick}
+          />
         ) : (
           <Flex flex={1} alignItems="center">
             <Status status="empty" />
           </Flex>
         )}
       </div>
+
+      {activeLetter.hiragana && (
+        <div
+          css={css`
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          `}
+        >
+          <LetterGalary
+            letters={lettersFiltered}
+            index={lettersFiltered.findIndex(
+              l => l.hiragana === activeLetter.hiragana
+            )}
+            onClose={() => handleLetterClick(createNoopLetter())}
+          />
+        </div>
+      )}
     </div>
   )
+
+  function handleLetterClick(letter: Letter) {
+    setActiveLetter(letter)
+  }
 
   function handleSearchChange(input: string) {
     setSearch(input)
