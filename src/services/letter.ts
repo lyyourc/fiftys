@@ -3,6 +3,7 @@ export interface Letter {
   katakana: string
   roomaji: string
   chinese: string
+  figure?: string
 }
 
 export function createNoopLetter(): Letter {
