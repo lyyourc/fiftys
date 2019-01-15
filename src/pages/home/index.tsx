@@ -45,7 +45,9 @@ export default function HomePage() {
       <div
         ref={scrollEl}
         css={css`
-          height: calc(100% - ${theme.heights.search} - 16px);
+          height: calc(
+            100% - ${theme.heights.search} - ${theme.heights.navbar} - 16px
+          );
           overflow: auto;
           -webkit-overflow-scrolling: touch;
           padding: 8px;
@@ -73,7 +75,8 @@ export default function HomePage() {
           left: 0;
           width: 100%;
           height: 100%;
-          will-change: opacity;
+          z-index: 2;
+          will-change: opacity transform;
         `}
       >
         <div

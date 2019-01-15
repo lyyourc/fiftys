@@ -1,29 +1,25 @@
 import React, { Component } from 'react'
 import { ThemeProvider } from 'emotion-theming'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Global } from '@emotion/core'
 import theme from '@/styled/theme'
+import globalStyle from '@/styled/global'
 import HomePage from '@/pages/home'
-import { css, Global } from '@emotion/core'
+import FqaPage from '@/pages/fqa'
+import Navbar from '@/components/navbar'
 
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Router>
-          <Route exact path="/" component={HomePage} />
+          <>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/fqa" component={FqaPage} />
+            <Navbar />
+          </>
         </Router>
-        <Global
-          styles={css`
-            *:not(img) {
-              box-sizing: border-box;
-              -webkit-tap-highlight-color: transparent;
-            }
-
-            body {
-              font-family: 'Neucha', Arial, Helvetica, sans-serif;
-            }
-          `}
-        />
+        <Global styles={globalStyle} />
       </ThemeProvider>
     )
   }
