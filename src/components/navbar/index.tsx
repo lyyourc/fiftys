@@ -51,7 +51,7 @@ const NavItem = styled('div')`
     padding-bottom: 0.1rem;
 
     &.active {
-      border-color: #f3717a;
+      border-color: ${props => props.theme.colors.accent};
     }
   }
 `
