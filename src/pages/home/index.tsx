@@ -3,6 +3,9 @@ import { isEmpty } from 'lodash'
 import fuzzysort from 'fuzzysort'
 import { Flex, Box } from '@rebass/grid/emotion'
 import { css } from '@emotion/core'
+import styled from '@emotion/styled'
+import { Transition } from 'react-spring'
+import { useTransition, animated, config, useSpring } from 'react-spring/hooks'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { seions } from '@/services/data'
 import { Letter, createNoopLetter } from '@/services/letter'
@@ -10,7 +13,7 @@ import Letters from '@/components/letters'
 import Search from '@/components/search'
 import Status from '@/components/status'
 import theme from '@/styled/theme'
-import LetterGalary from '@/components/letter-gallery'
+import LetterCard from '@/components/letter-card'
 
 export default function HomePage() {
   const [search, setSearch] = useState('')
@@ -22,6 +25,12 @@ export default function HomePage() {
   useEffect(() => {
     handleBodyScroll(scrollEl.current)
   }, [])
+
+  const isLetterActive = activeLetter.hiragana !== ''
+  const modalTransitionProps = useSpring({
+    opacity: isLetterActive ? 1 : 0,
+    transform: `scale(${isLetterActive ? 1 : 0})`,
+  })
 
   return (
     <div
@@ -56,26 +65,31 @@ export default function HomePage() {
         )}
       </div>
 
-      {activeLetter.hiragana && (
+      <animated.div
+        style={modalTransitionProps}
+        css={css`
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          will-change: opacity;
+        `}
+      >
         <div
           css={css`
-            position: fixed;
-            z-index: 10;
-            top: 0;
-            left: 0;
+            background: rgba(0, 0, 0, 0.5);
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           `}
+          onClick={() => handleLetterClick(createNoopLetter())}
         >
-          <LetterGalary
-            letters={lettersFiltered}
-            index={lettersFiltered.findIndex(
-              l => l.hiragana === activeLetter.hiragana
-            )}
-            onClose={() => handleLetterClick(createNoopLetter())}
-          />
+          <LetterCard {...activeLetter} />
         </div>
-      )}
+      </animated.div>
     </div>
   )
 

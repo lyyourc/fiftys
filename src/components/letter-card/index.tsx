@@ -6,11 +6,11 @@ import styled from '@/styled'
 import FigureImage from '@/assets/letters/ame.png'
 import ProgressiveImage from 'react-progressive-image'
 
-export default function LetterCard(props: Letter) {
-  const { hiragana, katakana, roomaji, chinese, figure } = props
+export default function LetterCard(props: Letter & { style?: any }) {
+  const { hiragana, katakana, roomaji, chinese, figure, ...rest } = props
 
   return (
-    <Card>
+    <Card {...rest}>
       <div
         css={css`
           text-align: center;
@@ -61,6 +61,7 @@ const Card = styled('div')`
   align-items: stretch;
   justify-content: space-between;
   height: 74%;
+  min-height: 460px;
   width: 94%;
   background: #fff;
   box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
