@@ -9,3 +9,5 @@ declare module 'body-scroll-lock' {
   export const enableBodyScroll: any
   export const clearAllBodyScrollLocks: any
 }
+
+declare module 'vivus'

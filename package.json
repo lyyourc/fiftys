@@ -18,7 +18,8 @@
     "react-router-breadcrumbs-hoc": "^2.3.1",
     "react-router-dom": "^4.3.1",
     "react-spring": "^7.2.8",
-    "react-with-gesture": "^4.0.0"
+    "react-with-gesture": "^4.0.0",
+    "vivus": "^0.4.4"
   },
   "scripts": {
     "start": "node scripts/start.js",

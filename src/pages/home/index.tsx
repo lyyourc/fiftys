@@ -29,8 +29,10 @@ export default function HomePage() {
   const isLetterActive = activeLetter.hiragana !== ''
   const modalTransitionProps = useSpring({
     opacity: isLetterActive ? 1 : 0,
-    transform: `scale(${isLetterActive ? 1 : 0})`,
+    // transform: `scale(${isLetterActive ? 1 : 0})`,
+    visibility: isLetterActive ? 'visible' : 'hidden',
   })
+  const modalRef = useRef(null)
 
   return (
     <div
@@ -88,7 +90,12 @@ export default function HomePage() {
             align-items: center;
             justify-content: center;
           `}
-          onClick={() => handleLetterClick(createNoopLetter())}
+          ref={modalRef}
+          onClick={event => {
+            if (event.target === modalRef.current) {
+              handleLetterClick(createNoopLetter())
+            }
+          }}
         >
           <LetterCard {...activeLetter} />
         </div>
