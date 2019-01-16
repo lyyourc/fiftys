@@ -1,5 +1,5 @@
 import React from 'react'
-import LetterItem from '@/components/letter'
+import LetterItem from './item'
 import { chunk, noop } from 'lodash'
 import { css } from '@emotion/core'
 import { Flex, Box } from '@rebass/grid/emotion'
