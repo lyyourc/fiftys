@@ -42,7 +42,7 @@ export default function LetterDrawing(props: IWritingProps) {
     return () => {
       clearTimeout(timeId)
     }
-  })
+  }, [])
 
   return (
     <div
