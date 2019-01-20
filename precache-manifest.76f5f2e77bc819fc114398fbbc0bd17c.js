@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/mochi.0eaf63f6.png"
   },
   {
-    "revision": "00e3a4caddfd2b52ffa9",
+    "revision": "2c6fe1abb7c22b0b7f86",
     "url": "/fiftys/static/css/main.ceac342a.chunk.css"
   },
   {
@@ -296,8 +296,8 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/misoshiru.fd22bbbd.png"
   },
   {
-    "revision": "00e3a4caddfd2b52ffa9",
-    "url": "/fiftys/static/js/main.00e3a4ca.chunk.js"
+    "revision": "2c6fe1abb7c22b0b7f86",
+    "url": "/fiftys/static/js/main.2c6fe1ab.chunk.js"
   },
   {
     "revision": "3e66b923409c968a59be49e0ec6b31ed",
@@ -592,7 +592,7 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/yu.9570b716.svg"
   },
   {
-    "revision": "8d02400cef43a88785eb2d7f6d193828",
+    "revision": "2b85982db2e2f9621b907d678fc9cc10",
     "url": "/fiftys/index.html"
   }
 ];

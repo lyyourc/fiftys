@@ -1,7 +1,7 @@
 {
   "main.css": "/fiftys/static/css/main.ceac342a.chunk.css",
-  "main.js": "/fiftys/static/js/main.00e3a4ca.chunk.js",
-  "main.js.map": "/fiftys/static/js/main.00e3a4ca.chunk.js.map",
+  "main.js": "/fiftys/static/js/main.2c6fe1ab.chunk.js",
+  "main.js.map": "/fiftys/static/js/main.2c6fe1ab.chunk.js.map",
   "static/js/1.4cb53178.chunk.js": "/fiftys/static/js/1.4cb53178.chunk.js",
   "static/js/1.4cb53178.chunk.js.map": "/fiftys/static/js/1.4cb53178.chunk.js.map",
   "static/js/2.27d5368e.chunk.js": "/fiftys/static/js/2.27d5368e.chunk.js",
@@ -198,6 +198,6 @@
   "static/media/empty.svg": "/fiftys/static/media/empty.39db0803.svg",
   "static/css/main.ceac342a.chunk.css.map": "/fiftys/static/css/main.ceac342a.chunk.css.map",
   "index.html": "/fiftys/index.html",
-  "precache-manifest.4ff1f7b93981475d017c0a9eda5c56b7.js": "/fiftys/precache-manifest.4ff1f7b93981475d017c0a9eda5c56b7.js",
+  "precache-manifest.76f5f2e77bc819fc114398fbbc0bd17c.js": "/fiftys/precache-manifest.76f5f2e77bc819fc114398fbbc0bd17c.js",
   "service-worker.js": "/fiftys/service-worker.js"
 }
