@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <>
             <Route exact path="/" component={HomePage} />
             <Route path="/fqa" component={FqaPage} />
