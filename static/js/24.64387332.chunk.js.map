@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/no.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/24.64387332.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/no.4663d9d5.svg\";"],"sourceRoot":""}

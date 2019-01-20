@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/sa.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/32.6f0e4241.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/sa.95b1f137.svg\";"],"sourceRoot":""}

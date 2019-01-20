@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/ko.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/13.757d143f.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/ko.2147bdcf.svg\";"],"sourceRoot":""}

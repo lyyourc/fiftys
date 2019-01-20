@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/ri.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/29.14156d1e.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/ri.73bec27c.svg\";"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/shi.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/34.5f05bcd8.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/shi.0ffea1b2.svg\";"],"sourceRoot":""}

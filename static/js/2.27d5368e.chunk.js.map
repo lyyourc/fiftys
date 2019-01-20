@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/hiragana/svgs/chi.svg"],"names":["module","exports","__webpack_require__","p"],"mappings":"6EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/2.27d5368e.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/chi.f00abead.svg\";"],"sourceRoot":""}
