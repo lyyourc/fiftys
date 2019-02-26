@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/mochi.0eaf63f6.png"
   },
   {
-    "revision": "576fa2643673322b0523",
-    "url": "/fiftys/static/css/main.ef98fb10.chunk.css"
+    "revision": "6922eaec0a69a2c5906c",
+    "url": "/fiftys/static/css/main.f3c654d5.chunk.css"
   },
   {
     "revision": "4cb53178a4bab53e8858",
@@ -296,8 +296,8 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/misoshiru.fd22bbbd.png"
   },
   {
-    "revision": "576fa2643673322b0523",
-    "url": "/fiftys/static/js/main.576fa264.chunk.js"
+    "revision": "6922eaec0a69a2c5906c",
+    "url": "/fiftys/static/js/main.6922eaec.chunk.js"
   },
   {
     "revision": "3e66b923409c968a59be49e0ec6b31ed",
@@ -592,7 +592,7 @@ self.__precacheManifest = [
     "url": "/fiftys/static/media/yu.9570b716.svg"
   },
   {
-    "revision": "c678db7aef00df9c471e0d9cfaafb833",
+    "revision": "211a9d020312fddf53ab9d1194626672",
     "url": "/fiftys/index.html"
   }
 ];

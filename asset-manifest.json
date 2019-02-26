@@ -1,7 +1,7 @@
 {
-  "main.css": "/fiftys/static/css/main.ef98fb10.chunk.css",
-  "main.js": "/fiftys/static/js/main.576fa264.chunk.js",
-  "main.js.map": "/fiftys/static/js/main.576fa264.chunk.js.map",
+  "main.css": "/fiftys/static/css/main.f3c654d5.chunk.css",
+  "main.js": "/fiftys/static/js/main.6922eaec.chunk.js",
+  "main.js.map": "/fiftys/static/js/main.6922eaec.chunk.js.map",
   "static/js/1.4cb53178.chunk.js": "/fiftys/static/js/1.4cb53178.chunk.js",
   "static/js/1.4cb53178.chunk.js.map": "/fiftys/static/js/1.4cb53178.chunk.js.map",
   "static/js/2.27d5368e.chunk.js": "/fiftys/static/js/2.27d5368e.chunk.js",
@@ -196,8 +196,8 @@
   "static/media/yo.svg": "/fiftys/static/media/yo.04c52b5d.svg",
   "static/media/yu.svg": "/fiftys/static/media/yu.9570b716.svg",
   "static/media/empty.svg": "/fiftys/static/media/empty.39db0803.svg",
-  "static/css/main.ef98fb10.chunk.css.map": "/fiftys/static/css/main.ef98fb10.chunk.css.map",
+  "static/css/main.f3c654d5.chunk.css.map": "/fiftys/static/css/main.f3c654d5.chunk.css.map",
   "index.html": "/fiftys/index.html",
-  "precache-manifest.1487fc498c0688aefc5d01529d089c22.js": "/fiftys/precache-manifest.1487fc498c0688aefc5d01529d089c22.js",
+  "precache-manifest.7747fd2c3a3f3bd965fb801c96b43df6.js": "/fiftys/precache-manifest.7747fd2c3a3f3bd965fb801c96b43df6.js",
   "service-worker.js": "/fiftys/service-worker.js"
 }
