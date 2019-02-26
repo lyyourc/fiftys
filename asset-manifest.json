@@ -1,7 +1,7 @@
 {
-  "main.css": "/fiftys/static/css/main.ceac342a.chunk.css",
-  "main.js": "/fiftys/static/js/main.afbbe4bf.chunk.js",
-  "main.js.map": "/fiftys/static/js/main.afbbe4bf.chunk.js.map",
+  "main.css": "/fiftys/static/css/main.ef98fb10.chunk.css",
+  "main.js": "/fiftys/static/js/main.576fa264.chunk.js",
+  "main.js.map": "/fiftys/static/js/main.576fa264.chunk.js.map",
   "static/js/1.4cb53178.chunk.js": "/fiftys/static/js/1.4cb53178.chunk.js",
   "static/js/1.4cb53178.chunk.js.map": "/fiftys/static/js/1.4cb53178.chunk.js.map",
   "static/js/2.27d5368e.chunk.js": "/fiftys/static/js/2.27d5368e.chunk.js",
@@ -94,8 +94,8 @@
   "static/js/45.ee27e100.chunk.js.map": "/fiftys/static/js/45.ee27e100.chunk.js.map",
   "static/js/46.53f1881b.chunk.js": "/fiftys/static/js/46.53f1881b.chunk.js",
   "static/js/46.53f1881b.chunk.js.map": "/fiftys/static/js/46.53f1881b.chunk.js.map",
-  "static/js/47.1240513e.chunk.js": "/fiftys/static/js/47.1240513e.chunk.js",
-  "static/js/47.1240513e.chunk.js.map": "/fiftys/static/js/47.1240513e.chunk.js.map",
+  "static/js/47.80743c6a.chunk.js": "/fiftys/static/js/47.80743c6a.chunk.js",
+  "static/js/47.80743c6a.chunk.js.map": "/fiftys/static/js/47.80743c6a.chunk.js.map",
   "runtime~main.js": "/fiftys/static/js/runtime~main.ca7361a6.js",
   "runtime~main.js.map": "/fiftys/static/js/runtime~main.ca7361a6.js.map",
   "static/media/loading.svg": "/fiftys/static/media/loading.2ba1fd82.svg",
@@ -196,8 +196,8 @@
   "static/media/yo.svg": "/fiftys/static/media/yo.04c52b5d.svg",
   "static/media/yu.svg": "/fiftys/static/media/yu.9570b716.svg",
   "static/media/empty.svg": "/fiftys/static/media/empty.39db0803.svg",
-  "static/css/main.ceac342a.chunk.css.map": "/fiftys/static/css/main.ceac342a.chunk.css.map",
+  "static/css/main.ef98fb10.chunk.css.map": "/fiftys/static/css/main.ef98fb10.chunk.css.map",
   "index.html": "/fiftys/index.html",
-  "precache-manifest.4c8b422b7ea6ebb6c76c99d64fe0eadc.js": "/fiftys/precache-manifest.4c8b422b7ea6ebb6c76c99d64fe0eadc.js",
+  "precache-manifest.1487fc498c0688aefc5d01529d089c22.js": "/fiftys/precache-manifest.1487fc498c0688aefc5d01529d089c22.js",
   "service-worker.js": "/fiftys/service-worker.js"
 }
