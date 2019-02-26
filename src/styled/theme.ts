@@ -11,7 +11,7 @@ export type Theme = {
 
 const theme: Theme = {
   heights: {
-    search: '42px',
+    search: '60px',
     navbar: '48px',
   },
   colors: {

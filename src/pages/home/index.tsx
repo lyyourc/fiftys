@@ -28,14 +28,9 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div
-      css={css`
-        height: 100vh;
-      `}
-    >
-      <Box px={2} pt={3}>
-        <Search placeholder="あ；ア；a ；安" onChange={handleSearchChange} />
-      </Box>
+    <div css={css``}>
+      <Search placeholder="あ；ア；a ；安" onChange={handleSearchChange} />
+
       <Gallery
         visible={activeLetterIndex !== -1}
         items={lettersFiltered}
@@ -45,12 +40,14 @@ export default function HomePage() {
       <div
         ref={scrollEl}
         css={css`
-          height: calc(100% - ${theme.heights.search} - 16px);
-          overflow: auto;
-          -webkit-overflow-scrolling: touch;
           padding: 8px;
+          padding-top: ${parseInt(theme.heights.search) + 8}px;
+          padding-bottom: 100px;
           display: flex;
           flex-direction: column;
+          height: 100vh;
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
         `}
       >
         {!isEmpty(lettersFiltered) ? (

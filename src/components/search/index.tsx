@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from '@/styled'
 import { noop } from 'lodash'
+import { Box } from '@rebass/grid/emotion'
+import { css } from '@emotion/core'
+import theme from '@/styled/theme'
 
 export interface ISearchProps {
   placeholder?: string
@@ -14,13 +17,27 @@ export default function Search(props: ISearchProps) {
     onChange(event.target.value)
   }
 
-  return <Input type="text" placeholder={placeholder} onChange={handleChange} />
+  return (
+    <Box
+      px={2}
+      py={3}
+      css={css`
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: ${theme.heights.search};
+        z-index: 1;
+        background: #fff;
+      `}
+    >
+      <Input type="text" placeholder={placeholder} onChange={handleChange} />
+    </Box>
+  )
 }
 
 const Input = styled('input')`
   width: 100%;
-  height: ${props => props.theme.heights.search};
-  background: 0 0;
   border: 2px solid #41403e;
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
