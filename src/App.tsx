@@ -16,7 +16,7 @@ class App extends Component {
           <>
             <Route exact path="/" component={HomePage} />
             <Route path="/fqa" component={FqaPage} />
-            <Navbar />
+            {/* <Navbar /> */}
           </>
         </Router>
         <Global styles={globalStyle} />

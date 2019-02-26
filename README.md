@@ -1,3 +1,4 @@
 # fiftys
 
-For learning animations 🤪
+hiragana and katakana, AKA "50 sounds" 🐮
+

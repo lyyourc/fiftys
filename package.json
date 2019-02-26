@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/core": "^10.0.6",
-    "@emotion/styled": "^10.0.6",
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "@rebass/grid": "^6.0.0-7",
     "body-scroll-lock": "^2.6.1",
-    "emotion-theming": "^10.0.6",
+    "emotion-theming": "^10.0.7",
     "fuzzysort": "^1.1.4",
     "lodash": "^4.17.11",
     "react": "^16.8.0-alpha.0",
@@ -18,7 +18,7 @@
     "react-router-breadcrumbs-hoc": "^2.3.1",
     "react-router-dom": "^4.3.1",
     "react-spring": "^7.2.8",
-    "react-with-gesture": "^4.0.0",
+    "react-with-gesture": "^4.0.5",
     "vivus": "^0.4.4"
   },
   "scripts": {
@@ -96,7 +96,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.1.6",
-    "@emotion/babel-preset-css-prop": "^10.0.6",
+    "@emotion/babel-preset-css-prop": "^10.0.7",
     "@svgr/webpack": "2.4.1",
     "@types/jest": "23.3.12",
     "@types/lodash": "^4.14.119",

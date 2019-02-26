@@ -92,11 +92,7 @@ export default function LetterCard(props: Letter & { style?: any }) {
 }
 
 const CardContainer = styled('div')`
-  position: relative;
-  height: 74%;
-  min-height: 460px;
-  width: 94%;
-  backface-visibility: hidden;
+  height: 100%;
 `
 
 const Card = styled(animated.div)`
